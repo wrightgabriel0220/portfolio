@@ -55,16 +55,25 @@ table {
 /* MY CSS: */
 /* ..................................................................... */
 
-html, body {
+* {
   cursor: none;
+}
+
+html, body {
   min-height: 100%;
+}
+
+button {
+  margin: 50px;
 }
 
 #crosshair-cursor {
   position: absolute;
+  pointer-events: none;
   border-width: 2px;
   border-color: green;
   border-style: solid;
   width: 25px;
   height: 25px;
+	transition: width .2s, height .2s;
 }
