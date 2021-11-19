@@ -61,11 +61,26 @@ table {
 
 html, body {
   min-height: 100%;
+	height: 100%;
 	background-color: black;
+}
+
+#navigation-column {
+	height: 100%;
+	width: 50%;
+	float: right;
 }
 
 button {
   margin: 50px;
+	margin-right: 10px;
+	margin-left: 75%;
+	border: solid green .5px;
+	background-color: #00000000;
+	color: green;
+	float: right;
+	height: 10%;
+	width: 50%;
 }
 
 #crosshair-cursor {
@@ -74,7 +89,73 @@ button {
   border-width: 2px;
   border-color: green;
   border-style: solid;
+	color: green;
+	text-align: center;
   width: 25px;
   height: 25px;
 	transition: transform .2s ease-in-out, transform .2s ease-in-out;
+}
+
+.offset-tracker {
+	display: flex;
+	color: green;
+	position: absolute;
+	pointer-events: none;
+}
+
+#ns-tracker {
+	height: 100%;
+	width: 2%;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+#we-tracker {
+	width: 100%;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.tracker-tick {
+	background-color: green;
+	position: relative;
+}
+
+.offset-tracker-body {
+	display: flex;
+	position: relative;
+}
+
+#ns-tracker-body {
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	width: 1px;
+}
+
+
+#ns-tracker .tracker-tick {
+	height: 25px;
+	width: 1px;
+}
+
+#south-tick-reporter {
+	margin-left: 10px;
+	margin-bottom: 25px;
+}
+
+#we-tracker-body {
+	flex-direction: row;
+	justify-content: space-between;
+	height: 1px;
+	width: 100%;
+}
+
+#we-tracker .tracker-tick {
+	width: 25px;
+}
+
+#east-tick-reporter {
+	margin-top: 10px;
+	margin-right: 25px;
 }

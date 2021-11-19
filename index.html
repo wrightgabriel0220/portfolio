@@ -7,14 +7,28 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <header id="header"></header>
     <div id="crosshair-cursor"></div>
-    <button id="test-button-1">TEST BUTTON</button>
-    <button id="test-button-2">TEST BUTTON</button>
-    <button id="test-button-3">TEST BUTTON</button>
-    <button id="test-button-4">TEST BUTTON</button>
-    <button id="test-button-5">TEST BUTTON</button>
-    <footer id="footer"></footer>
+    <div id="ns-tracker" class="offset-tracker">
+      <div id="ns-tracker-body" class="offset-tracker-body">
+        <div id="north-tracker-tick" class="tracker-tick"></div>
+        <div id="south-tracker-tick" class="tracker-tick"></div>
+      </div>
+      <span id="south-tick-reporter">x:0</span>
+    </div>
+    <div id="we-tracker" class="offset-tracker">
+      <div id="we-tracker-body" class="offset-tracker-body">
+        <div id="west-tracker-tick" class="tracker-tick"></div>
+        <div id="east-tracker-tick" class="tracker-tick"></div>
+      </div>
+      <span id="east-tick-reporter">y:0</span>
+    </div>
+    <nav id="navigation-column">
+      <button id="test-button-1">TEST BUTTON</button>
+      <button id="test-button-2">TEST BUTTON</button>
+      <button id="test-button-3">TEST BUTTON</button>
+      <button id="test-button-4">TEST BUTTON</button>
+      <button id="test-button-5">TEST BUTTON</button>
+    </nav>
   </body>
   <script src="index.js"></script>
 </html>
