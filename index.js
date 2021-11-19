@@ -2,6 +2,11 @@ const cursor = document.getElementById('crosshair-cursor');
 const body = document.getElementsByTagName('html')[0];
 const buttons = document.getElementsByTagName('button');
 
+const updateCursorPosition = (x, y) => {
+  cursor.style.top = y - cursor.clientHeight / 2 + 'px';
+  cursor.style.left = x - cursor.clientWidth / 2 + 'px';
+};
+
 body.onmousemove = event => {
   updateCursorPosition(event.clientX, event.clientY);
 };
